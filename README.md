@@ -13,7 +13,7 @@ The policy, updated in Summer 2020, clarifies several implementations of the hig
 
 The policy, [released on July 16, 2019](https://www.aeaweb.org/news/member-announcements-july-16-2019), was  published in the [2020 AEA Papers and Proceedings](https://doi.org/10.1257/pandp.110.776). 
 
-- archive on AEA website
+- [archive on AEA website](https://www.aeaweb.org/journals/data/archive/2019.07)
 - [archive at Wayback Machine](https://web.archive.org/web/20191210024228/https://www.aeaweb.org/journals/policies/data-code/)
 
 
