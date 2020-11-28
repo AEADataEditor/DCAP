@@ -1,0 +1,87 @@
+% PP-Article.tex for AEA last revised 22 June 2011
+\documentclass[PP]{AEA}
+
+%%%%%% NOTE FROM OVERLEAF: The mathtime package is no longer publicly available nor distributed. We recommend using a different font package e.g. mathptmx if you'd like to use a Times font.
+\usepackage{mathptmx}
+\usepackage{url}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{%
+	plainpages,%
+	colorlinks,% removes the boxes around links
+	urlcolor=Blue,%
+	linkcolor=Blue,%
+	filecolor=black,%
+	citecolor=Blue,%   requires xcolor with option dvipsnames
+	pdfpagemode=UseOutlines,%
+	pdfauthor={Lars Vilhuber},%
+}
+
+% If you have trouble with the mathtime package please see our technical support 
+% document at: http://www.aeaweb.org/templates/technical_support.pdf
+% You may remove the mathtime package if you can't get it working but your page
+% count may be inaccurate as a result.
+% \usepackage[cmbold]{mathtime}
+
+% Note: you may use either harvard or natbib (but not both) to provide a wider
+% variety of citation commands than latex supports natively. See below.
+
+% Uncomment the next line to use the natbib package with bibtex 
+\usepackage{natbib}
+
+% Uncomment the next line to use the harvard package with bibtex
+%\usepackage[abbr]{harvard}
+
+% flexible url citations
+%\newcommand{\urlcite}[2]{\href{#1}{#2}
+\newcommand{\urlcite}[2]{#2\footnote{\url{#1}}}
+\newcommand{\purlcite}[2]{#2.\footnote{\url{#1}}}
+\newcommand{\furlcite}[2]{#2 (\url{#1})}
+
+
+% This command determines the leading (vertical space between lines) in draft mode
+% with 1.5 corresponding to "double" spacing.
+\draftSpacing{1.5}
+
+%\newcommand{\Href}[2]{\href{#1}{#2}}
+% alternate version:
+\newcommand{\Href}[2]{\href{#1}{#2} (\url{#1})}
+% alternate version 2:
+%\newcommand{\Href}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+
+\title{Data and Code Availability Policy}
+\shortTitle{Data and Code Avail. Policy}
+\author{American Economic Association\thanks{AEA Address. For questions, contact the AEA Data Editor at dataeditor@aeapubs.org}}\pubMonth{Month}
+\date{\today}
+\pubYear{Year}
+\pubVolume{Vol}
+\pubIssue{Issue}
+\maketitle
+
+\input{sub-dcap2020.tex}
+\input{sub-policy-experimental.tex}
+\input{sub-policy-third-party.tex}
+\input{sub-policy-revisions.tex}
+
+
+
+\appendix 
+\section{Note}
+This  \textit{AEA Data and Code Availability Policy} and supplementary policies were published online at \url{https://www.aeaweb.org/journals/data} in September 2020,  replacing \citet{10.1257/pandp.110.dcap} and other previous policies. The policy is reprinted here as the version of record. Guidance to authors on how to comply with the policy can be found at the web address above, and at \url{https://aeadataeditor.github.io/aea-de-guidance/}. Previous versions of the policy can also be found at \url{https://www.aeaweb.org/journals/data/archive}.
+
+% Remove or comment out the next two lines if you are not using bibtex.
+\bibliographystyle{aea-mod}
+\bibliography{paper}
+
+% The appendix command is issued once, prior to all appendices, if any.
+%\appendix
+
+%\section{Mathematical Appendix}
+
+\end{document}
+
